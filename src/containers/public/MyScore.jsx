@@ -12,7 +12,6 @@ const MyScore = () => {
 
   useEffect(() => {
     getDataScoreByMSSV({mssv: mssv}).then((reponse) => {
-      console.log(reponse);
       setScores(reponse.data);
     });
   }, [mssv]);
